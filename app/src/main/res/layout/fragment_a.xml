@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFBB00"
-    tools:context=".FragmentA">
+    android:background="#bb22"
+    tools:context=".FragmentB">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="80dp"
-        android:text="@string/hello_blank_fragment"
-        android:textColor="@android:color/red"
-        android:textSize="30sp" />
+    <Button
+        android:id="@+id/click_me_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/click_me_button_text"
+        android:text="@string/click_me_button_text" />
 
 </RelativeLayout>
