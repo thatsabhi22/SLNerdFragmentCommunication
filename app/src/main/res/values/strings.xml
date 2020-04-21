@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SLNerdFragmentCommunication</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">{About to change}</string>
+    <string name="click_me_content_desc">click me button</string>
+    <string name="click_me_button_text">Click Me</string>
 </resources>
