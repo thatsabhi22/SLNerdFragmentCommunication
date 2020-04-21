@@ -34,4 +34,8 @@ public class FragmentB extends Fragment {
         super.onActivityCreated(savedInstanceState);
         displayTV = getActivity().findViewById(R.id.text_change);
     }
+
+    public void changeTVText(String data){
+        displayTV.setText(data);
+    }
 }

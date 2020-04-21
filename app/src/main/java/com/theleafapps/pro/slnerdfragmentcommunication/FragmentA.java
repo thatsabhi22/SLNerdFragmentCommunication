@@ -17,6 +17,7 @@ public class FragmentA extends Fragment {
 
     Button click_me_btn;
     private int counter = 0;
+    Communicator comm;
 
     public FragmentA() {
         // Required empty public constructor
@@ -34,11 +35,16 @@ public class FragmentA extends Fragment {
         super.onActivityCreated(savedInstanceState);
         click_me_btn = getActivity().findViewById(R.id.click_me_btn);
 
+        comm = (Communicator) getActivity();
+
+
         click_me_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 counter++;
+                comm.respond("Button is clicked " + counter + " times");
             }
         });
+
     }
 }

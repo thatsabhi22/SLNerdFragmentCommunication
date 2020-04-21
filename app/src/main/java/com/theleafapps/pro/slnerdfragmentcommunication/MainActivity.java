@@ -1,6 +1,7 @@
 package com.theleafapps.pro.slnerdfragmentcommunication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements Communicator{
 
     @Override
     public void respond(String data) {
-
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentB fb = (FragmentB) fragmentManager.findFragmentById(R.id.fragment_b);
+        fb.changeTVText(data);
     }
 }
